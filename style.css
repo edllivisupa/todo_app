@@ -1,0 +1,54 @@
+* {
+    margin: 0%;
+    font-family: Roboto;
+}
+
+html {
+    background-color: black;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+#todo-container /* flex container*/ {
+    display: flexbox;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: white;
+    height: 80vh;
+    border-radius: 25px;
+}
+
+#to-do {
+    width: 70%;
+}
+
+form > div /*flex item*/ {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin-bottom: 2.5%;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+button {
+    background-color: white;
+    border-radius: 5px;
+    min-width: 50px;
+}
+
+ul > li {
+    display: flex;
+    align-items: end;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

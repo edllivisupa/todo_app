@@ -1,0 +1,5 @@
+Add multi-color background that will transition like a Lava lamp
+Use flex box to align one item to the left, another to a fixed position on the right
+Gap and flex spacing to ls, where the task and buttons are
+Strikethrough to apply only to task and not buttons
+LOCAL STORAGE!!!!!!
