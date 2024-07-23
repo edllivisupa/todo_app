@@ -14,7 +14,7 @@ h1 {
     padding-bottom: 2.5%;
 }
 
-#todo-container /* flex container*/ {
+#header-container /* flex container*/ {
     display: flexbox;
     margin-left: 5%;
     margin-right: 5%;
@@ -25,7 +25,7 @@ h1 {
     border-radius: 25px;
 }
 
-#to-do {
+#task-input {
     width: 70%;
 }
 

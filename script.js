@@ -1,17 +1,32 @@
 const form = document.querySelector("form");
-const toDoList = document.querySelector("#to-do-list");
+const toDoList = document.querySelector("#tasks-list");
+
+//declare array varaible to store tasks
+
+//load localStorage
+//render all items from localStorage
+
+//when an items is deleted from array, also needs to be deleted from localStorage
+
+//this is test out
+//this is another test
 
 
 //listener event when 'Add' submit button is clicked
 form.addEventListener("submit", function(event) {
     //must prevent form from exeucting default action
     event.preventDefault();
-    const newToDoInput = document.querySelector("#to-do");
+    const newToDoInput = document.querySelector('input[name="new-task"]');
     
     const newToDo = document.createElement("li");
     const newDoneButton = document.createElement("button");
     const newDeleteButton = document.createElement("button");
     
+
+    //test for localStorage
+    storedTask = newToDoInput.value;
+
+
     newToDo.innerText = newToDoInput.value;
     newDoneButton.innerText = "Done";
     newDeleteButton.innerText = "Delete";
@@ -35,11 +50,15 @@ form.addEventListener("submit", function(event) {
     toDoList.append(newToDo);
     form.reset();
 
-    //adds to localStorage
-    savedToDos.push({ task : newToDo.innerText, isDone : false });
-    localStorage.setItem("todos", JSON.stringify(savedTodos));
+    //adds to local storage
+    localStorage.setItem('task', JSON.stringify(storedTask));
+    // JSON.parse(localStorage.getItem(task));
 })  
 
+
+//  //adds to localStorage
+//  savedToDos.push({ task : newToDo.innerText, isDone : false });
+//  localStorage.setItem("todos", JSON.stringify(savedTodos));
 
 //add to local storage
 // localStorage.getItem
